@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Campus Bakery Online Order</title>
+</head>
+
+<body>
+	<!-- Header: Bakery name and slogan -->
+	<div id="header">
+	    <h1>CampusBakery;
+	        <span>Freshly Baked Everdayy, Just for You!</span>
+	    </h1>
+	</div>
+
+	<!-- Nav: Three inline links -->
+	<div id="nav">
+	    <a href="#home">Home</a> |
+	    <a href="#order">Place Order</a> |
+	    <a href="#prices">Price List</a>
+	</div>
+
+	<!-- Content: Introduction -->
+	<div id="content">
+
+	    <h2 id="home">Welcome to CampusBake!</h2>
+
+	    <p>
+	        We prepare <strong>fresh cupcakes</strong> and
+	        <em>delicious cake slices</em> every day.
+	        Visit our <span>campus bakery</span> or
+	        <a href="#order">place your order online</a>.
+	    </p>
+
+	    <!-- Order form: HTML5 form elements -->
+	    <div id="order">
+
+	        <h2>Online Order Form</h2>
+
+	        <form action="order.php" method="post"
+	        oninput="this.elements['total'].value =
+	        (Number(this.elements['cupcakes'].value) * 3) +
+	        (Number(this.elements['slices'].value) * 5)">
+
+
+	    		<!-- Customer input name -->
+	            <label for="customer">Customer Name:</label>
+	            <input type="text" id="customer" name="customer"
+	            placeholder="Enter your name <3"
+	            required autofocus>
+	            <br><br>
+
+				<!-- Customer input fon number -->
+	            <label for="phone">Phone Number:</label>
+	            <input type="tel" id="phone" name="phone" required>
+	            <br><br>
+
+				<!-- Customer input email -->
+	            <label for="email">E-mail:</label>
+	            <input type="email" id="email" name="email" required>
+	            <br><br>
+
+
+	            <label for="date">Pick-up Date:</label>
+	            <input type="date" id="date" name="date">
+	            <br><br>
+
+	            <label for="time">Pick-up Time:</label>
+	            <input type="time" id="time" name="time">
+	            <br><br>
+
+	            <!-- DATALIST: Four available flavours -->
+	            <label for="flavour">Flavour:</label>
+	            <input type="text" id="flavour" name="flavour"
+	            list="flavours">
+
+	            <datalist id="flavours">
+	                <option value="Chocolate">
+	                <option value="Vanilla">
+	                <option value="Strawberry">
+	                <option value="Red Velvet">
+	            </datalist>
+	            <br><br>
+
+	            <label for="icing">Icing Colour:</label>
+	            <input type="color" id="icing" name="icing">
+	            <br><br>
+
+	            <label for="sweetness">Sweetness Level:</label>
+	            <input type="range" id="sweetness" name="sweetness"
+	            min="1" max="5" step="1">
+	            <br><br>
+
+	            <!-- Calc for price-->
+	            <h3>Calculate Your Price</h3>
+
+	            <label for="cupcakes">Cupcakes (RM 3.00 each):</label>
+	            <input type="number" id="cupcakes" name="cupcakes"
+	            min="0" value="0">
+	            <br><br>
+
+	            <label for="slices">Cake Slices (RM 5.00 each):</label>
+	            <input type="number" id="slices" name="slices"
+	            min="0" value="0">
+	            <br><br>
+
+	            Total Price: RM
+	            <output name="total" for="cupcakes slices">0</output>
+	            <br><br>
+
+	            <input type="submit" value="Submit Order">
+
+	        </form>
+	    </div>
+	</div>
+
+	<!-- sidebar: Price list and HTML entities -->
+	<div id="sidebar">
+
+	    <h2 id="prices">Price List</h2>
+
+	    <ul>
+	        <li>Cupcake - RM 3.00 each</li>
+	        <li>Cake Slice - RM 5.00 each</li>
+	        <li>Cookie - RM 2.00 each</li>
+	        <li>Brownie - RM 4.00 each</li>
+	    </ul>
+
+	    <p>Orders &gt; 10 pieces get a free drink.</p>
+
+	</div>
+
+	<!-- Footer: Copyright and special entities -->
+	<div id="footer">
+
+	    <p>CampusBake&reg; &nbsp; | &pound; and &euro;</p>
+
+	    <p>&copy; 2026 CampusBake. All rights reserved.</p>
+
+	</div>
+</body>
+</html>
