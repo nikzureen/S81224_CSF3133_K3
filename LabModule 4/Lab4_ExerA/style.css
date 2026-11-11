@@ -1,0 +1,188 @@
+
+/* General Styling */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4fbfa;
+    color: #333333;
+}
+
+header {
+    color: white;
+    background-color: #087e75;
+    padding: 20px;
+}
+
+h1 {
+    text-decoration: overline;
+    font-size: 36px;
+}
+
+h2 {
+    text-decoration: underline;
+    color: #087e75;
+    text-align: center;
+}
+
+section {
+    width: 90%;
+    margin: 25px auto;
+    padding: 20px;
+}
+
+/* Navigation Bar */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #075e57;
+    text-align: center;
+}
+
+nav li {
+    display: inline-block;
+}
+
+nav a {
+    display: block;
+    padding: 14px 20px;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+nav a:hover {
+    background-color: #f0a202;
+}
+
+/* Destination Cards */
+.destination-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.card {
+    background-color: white;
+    border: 1px solid #b7d8d4;
+    border-radius: 8px;
+    padding: 18px;
+    width: 27%;
+    min-width: 220px;
+    box-sizing: border-box;
+}
+
+.card h3 {
+    color: #075e57;
+}
+
+.old-price {
+    text-decoration: line-through;
+    color: #777777;
+}
+
+.price {
+    color: #c0392b;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.caption {
+    text-align: center;
+    font-style: italic;
+}
+
+/* Responsive Video */
+video {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: auto;
+}
+
+/* Trip Form */
+.trip-form {
+    background-color: #e0f2f1;
+    padding: 20px;
+    border: 1px solid #087e75;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 500px;
+    margin: auto;
+    box-sizing: border-box;
+}
+
+.trip-form input[type="text"],
+.trip-form input[type="email"] {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0 15px;
+    box-sizing: border-box;
+}
+
+.trip-form button {
+    background-color: #087e75;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+.trip-form button:hover {
+    background-color: #f0a202;
+}
+
+/* Link States */
+a:link {
+    color: #075e57;
+}
+
+a:visited {
+    color: #6c3483;
+}
+
+a:hover {
+    color: #d35400;
+}
+
+a:active {
+    color: #c0392b;
+}
+
+/* Navigation Link Colours */
+nav a:link,
+nav a:visited,
+nav a:hover,
+nav a:active {
+    color: white;
+}
+
+footer {
+    background-color: #075e57;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+footer a:link,
+footer a:visited {
+    color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    nav li {
+        display: block;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+}

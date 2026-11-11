@@ -1,0 +1,140 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visit Terengganu</title>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Internal CSS -->
+    <style>
+        #welcome {
+            background-color: #e0f2f1;
+            padding: 25px;
+            text-align: center;
+        }
+
+        .page-note {
+            color: #176b63;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header id="welcome">
+        <h1>Visit Terengganu</h1>
+        <p class="page-note">
+            Discover Beautiful Islands, Culture and Nature
+        </p>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="#destinations">Destinations</a></li>
+            <li><a href="#video">Video</a></li>
+            <li><a href="#trip">Trip Form</a></li>
+        </ul>
+    </nav>
+
+    <!-- Destinations Section -->
+    <section id="destinations">
+        <h2>Popular Destinations</h2>
+
+        <div class="destination-container">
+
+            <article class="card">
+                <h3>Redang Island</h3>
+                <p>Enjoy clear blue water and beautiful beaches.</p>
+                <p>Old Price: <span class="old-price">RM 350</span></p>
+                <p class="price">Promotion Price: RM 280</p>
+            </article>
+
+            <article class="card">
+                <h3>Perhentian Island</h3>
+                <p>Explore marine life and enjoy snorkelling activities.</p>
+                <p>Old Price: <span class="old-price">RM 300</span></p>
+                <p class="price">Promotion Price: RM 230</p>
+            </article>
+
+            <article class="card">
+                <h3>Drawbridge</h3>
+                <p>Visit this famous landmark in Kuala Terengganu.</p>
+                <p>Old Price: <span class="old-price">RM 100</span></p>
+                <p class="price">Promotion Price: RM 75</p>
+            </article>
+
+        </div>
+
+        <!-- Meter showing filled seats -->
+        <p>
+            Trip seats filled:
+            <meter min="0" max="40" value="28">28 out of 40</meter>
+            28/40
+        </p>
+    </section>
+
+    <!-- Video Section -->
+    <section id="video">
+        <h2>Explore Terengganu</h2>
+
+        <figure>
+            <video controls width="600" height="350">
+                <source src="terengganu.mp4" type="video/mp4">
+                Your browser does not support video.
+            </video>
+
+            <figcaption class="caption">
+                Watch the beauty of Terengganu.
+            </figcaption>
+        </figure>
+    </section>
+
+    <!-- Trip Registration Form -->
+    <section id="trip">
+        <h2>Register Your Trip Interest Now!</h2>
+
+        <form class="trip-form" action="#" method="post">
+
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+
+            <p>Traveller Type:</p>
+            <label><input type="radio" name="traveller" value="Student"> Student</label>
+            <label><input type="radio" name="traveller" value="Staff"> Staff</label>
+            <label><input type="radio" name="traveller" value="Public"> Public</label>
+
+            <p>Interests:</p>
+            <label><input type="checkbox" name="interest" value="Islands"> Islands</label>
+            <label><input type="checkbox" name="interest" value="Food"> Food</label>
+            <label><input type="checkbox" name="interest" value="Culture"> Culture</label>
+            <label><input type="checkbox" name="interest" value="Nature"> Nature</label>
+
+            <br><br>
+            <button type="submit">Submit</button>
+
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Visit Terengganu</p>
+
+        <address>
+            Contact:
+            <a href="mailto:visitterengganu@example.com">
+                visitterengganu@example.com
+            </a>
+        </address>
+    </footer>
+
+</body>
+</html>
