@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campus Bookstore</title>
+
+    <!-- Google Fonts: Roboto for body and Merriweather for headings -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Merriweather:wght@700&display=swap" rel="stylesheet">
+
+    <!-- External CSS file -->
+    <link rel="stylesheet" href="shop.css">
+</head>
+<body>
+    <!-- Error list from the original question:
+         1. shop.html line 7: rel="stylesheets" changed to rel="stylesheet".
+         2. shop.html lines 10-12: style block was inside body; moved into the head or external CSS.
+         3. shop.html line 18: inline CSS used color= instead of color:; title styling moved to CSS.
+         4. shop.css line 2: 'Robotto' corrected to 'Roboto'.
+         5. shop.css line 4: 'no repeat' corrected to 'no-repeat'.
+         6. shop.css line 5: 'bacground-position' corrected to 'background-position'.
+         7. shop.css line 18: display:inline changed to display:block for navigation links.
+         8. shop.css line 23: li:a:hover corrected to li a:hover.
+         9. shop.css line 26: selector #products did not match HTML id="product"; both changed to #product.
+         10. shop.css line 27: border-collapse:collapsed corrected to border-collapse:collapse.
+         11. shop.css line 34: nth-child(2) changed to nth-child(even).
+         12. shop.css line 37: :hovered corrected to :hover.
+         13. shop.css line 45: missing semicolon added after background-color.
+    -->
+
+    <!-- Part 2: semantic page structure -->
+    <header class="site-header" id="home">
+        <h1>Campus Bookstore</h1>
+        <p>Textbooks, stationery and more for every student.</p>
+    </header>
+
+    <nav class="navbar">
+        <ul>
+            <li><a class="active" href="#home">Home</a></li>
+            <li><a href="#books">Books</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="books">
+            <h2>Our Products</h2>
+            <p>Find useful learning materials and everyday stationery for your studies.</p>
+
+            <div class="table-wrapper">
+                <table id="product">
+                    <thead>
+                        <tr>
+                            <th>Item</th>
+                            <th>Category</th>
+                            <th>Price (RM)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Web Design Basics</td><td>Textbook</td><td class="price">45.00</td></tr>
+                        <tr><td>A4 Notebook</td><td>Stationery</td><td class="price">6.50</td></tr>
+                        <tr><td>USB Drive 32GB</td><td>Gadget</td><td class="price">25.00</td></tr>
+                        <tr><td>Highlighter Set</td><td>Stationery</td><td class="price">9.90</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <footer id="contact">
+        <p>&copy; 2026 Campus Bookstore</p>
+        <p>Contact: bookstore@campus.edu.my</p>
+    </footer>
+</body>
+</html>

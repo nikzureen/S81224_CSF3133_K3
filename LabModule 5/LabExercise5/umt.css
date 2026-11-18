@@ -1,0 +1,130 @@
+ /* Tetapan Asas & Tipografi */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #FFF5F7;
+    color: #4A3A3F;
+    line-height: 1.6;
+}
+
+/* Header Styling */
+header {
+    background: linear-gradient(135deg, #D98FA5, #E8A0B5);
+    color: #ffffff;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.1rem;
+    font-weight: 300;
+}
+
+/* Navigation Bar Styling dengan Kesan Hover */
+nav {
+    background-color: #B85C7A;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 2px 5px rgba(184, 92, 122, 0.2);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+nav ul li a {
+    display: block;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 15px 25px;
+    font-weight: 500;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #F3C1CF;
+    color: #7A3E52;
+}
+
+/* Main Content & Section Styling */
+main {
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+.content-section {
+    background-color: #ffffff;
+    padding: 30px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(184, 92, 122, 0.08);
+}
+
+.content-section h2 {
+    color: #B85C7A;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #E8A0B5;
+    padding-bottom: 8px;
+}
+
+.content-section p {
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+/* Table Styling dengan Border, Padding & Alternating Row Colors */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    background-color: #ffffff;
+}
+
+table th, table td {
+    padding: 12px 15px;
+    text-align: left;
+    border: 1px solid #F0D5DD;
+}
+
+table th {
+    background-color: #B85C7A;
+    color: #ffffff;
+    font-weight: 600;
+}
+
+/* Alternating Row Colors (Warna Selang-Seli) */
+table tbody tr:nth-child(even) {
+    background-color: #FFF0F3;
+}
+
+/* Kesan Hover pada Jadual */
+table tbody tr:hover {
+    background-color: #FCE1E8;
+    transition: background-color 0.2s ease;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #B85C7A;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    font-size: 0.9rem;
+}
